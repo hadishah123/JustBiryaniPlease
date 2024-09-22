@@ -1,0 +1,122 @@
+.bestseller {
+  height: max-content;
+  background: linear-gradient(145deg, #fff1e2, #f2f0f0a9, #eda85e);
+  overflow: hidden;
+  position: relative;
+}
+.bestseller #bestbiryaniBG {
+  position: absolute;
+  top: -50vh;
+  left: -15vw;
+  width: 170vw;
+  /* z-index: -1; */
+  opacity: 0.7;
+}
+.bestseller .besty {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#bestyTitle {
+  font-size: 4em;
+  margin: 1em;
+}
+#betleon {
+  width: 100px;
+  z-index: 1000;
+  position: absolute;
+  right: 27vw;
+  top: 4vh;
+}
+.bbitem-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item {
+  width: 350px;
+  height: max-content;
+  padding: 15px;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  transition: 0.5s all ease-in;
+  /* box-shadow:#eda85e 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  box-shadow: #eda85e 0px 4px 16px, #eda85e 0px 8px 24px, #eda85e 0px 16px 56px;
+  /* box-shadow: #eda85e 0px 15px 25px,#eda85e 0px 5px 10px; */
+  &:hover{
+    transform: scale(1.03);
+  }
+}
+.item .biryani-img{
+    width: 25em;
+    position: absolute;
+    left: 0;
+    top: -7em;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }  
+  100%{
+    transform: rotate(360deg);
+  }  
+}
+.item .order-now{
+    padding: 15px 35px;
+    border: none;
+    width: 95%;
+    border-radius: 1000px;
+    background-color: #ee8a21;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 10px 0px;color: white;
+}
+.item .item-name{
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+}
+.item .rip{
+    color: #5c5a58;
+    font-size: 0.9em;
+}
+.item .shark2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.item .shark3{
+    display: flex;
+}
+.item .shark3 img{
+    margin-left: 11px;    
+}
+.item .shark3 span{
+    margin: 6px;    
+}
+#givespace{
+    margin-top: 10em;
+}
+#givespace2{
+    margin-top: 9em;
+}
+.item .ratingOR{
+    color: #a96318;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.bbitem-container{
+    display: block;
+    /* justify-content: space-between; */
+}
+.bbitem-container .items-in-Row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20vh 0;
+}
+#bbspace-top{
+    margin-top: 10vh;
+}

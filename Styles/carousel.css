@@ -1,0 +1,42 @@
+#carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.hero {
+  min-width: 100vw;
+  box-sizing: border-box;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 130px;
+  height: 10px;
+  border-radius: 1000px;
+  margin: 7px;
+  cursor: pointer;
+  background-color: #ffffff4f;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+button,
+a {
+  color: inherit;
+  text-decoration: none;
+}

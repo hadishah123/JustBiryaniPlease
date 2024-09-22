@@ -1,0 +1,953 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Manrope";
+  overflow: auto;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.container .brand-name {
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.brand-name {
+  font-family: "Manrope";
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  position: relative;
+}
+
+.brand-name::after {
+  content: "For Every Mood";
+  font-size: 0.75rem;
+  color: #898080;
+  position: absolute;
+  left: 17.7rem;
+  width: max-content;
+  margin-top: 42px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-top: 2vh;
+  width: 643;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 60px;
+  text-shadow: px #544848;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0.2, 0.4); */
+  font-weight: 600;
+}
+#contact-num {
+  background-color: #ee8a21;
+  color: #ffffff;
+  border: none;
+  margin-left: 7vw;
+  margin-top: 2vh;
+  border-radius: 1000px;
+  padding: 10px 25px;
+}
+
+/* Hero Section Start */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(145deg, #f3ae65, #ffffffa9, #eda85e);
+  position: relative;
+}
+.hero #handi {
+  position: absolute;
+  right: 0px;
+  width: 70%;
+  object-fit: contain;
+  animation: shake 2s ease-in-out infinite;
+  transition: transform 0.5s ease;
+}
+
+.hero #handi:hover {
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero .s-text {
+  position: absolute;
+  left: 5vw;
+  top: 3vw;
+}
+.s-text .seg {
+  font-size: 35px;
+  font-weight: 500;
+}
+.s-text p {
+  margin: 0;
+}
+.slogan {
+  font-size: 7em;
+  margin: 0;
+  font-weight: 600;
+}
+.s-text #curly {
+  margin: 25px;
+}
+.f-words {
+  font-size: 2em;
+}
+.s-text button {
+  padding: 20px 35px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #ee8a21;
+  margin: 30px 0px;
+}
+.slogan span {
+  background: linear-gradient(to right, #ee8a21, #000000);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.s-text button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.hero #bowl {
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  object-fit: contain;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.chin2 {
+  display: flex;
+}
+.chin2 p {
+  position: relative;
+  left: 200px;
+}
+.chin2 button {
+  position: relative;
+  left: 200px;
+  margin: 25px;
+  padding: 20px 65px;
+}
+#bowl2 {
+  width: 650px;
+  position: relative;
+  top: 4vw;
+}
+.hero .s-text2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5vw;
+}
+.s-text2 .seg {
+  font-size: 35px;
+  font-weight: 500;
+}
+.s-text2 {
+  text-align: center;
+  margin-top: 10vh;
+}
+.s-text2 button {
+  padding: 20px 35px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #ee8a21;
+  margin: 30px 0px;
+}
+.s-text2 button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.s-text2 p {
+  margin: 0;
+}
+#bowl3 {
+  width: 750px;
+  position: absolute;
+  bottom: 0;
+}
+/* Hero Section End*/
+
+/* Why Choose Us Start */
+.need {
+  overflow: hidden;
+  height: 100vh;
+  /* width: 100vw; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  position: relative;
+  margin-bottom: 10em;
+}
+#rdbox {
+  width: 20vw;
+  height: 40vh;
+  z-index: -100;
+}
+#rdbox .rdot {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  border-radius: 50%;
+  z-index: -1000;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #f0e6daaf;
+}
+.need #bgcircle {
+  position: absolute;
+  left: 35%;
+  top: -54vh;
+  z-index: -100;
+}
+#needbg {
+  transition: 500ms ease-in-out;
+  &:hover {
+    animation: spin 3s linear infinite;
+  }
+}
+.wcU {
+  position: absolute;
+  font-size: 5em;
+  left: 53vh;
+  top: 8vh;
+}
+.need #qM {
+  position: absolute;
+  margin-left: 35px;
+}
+.answer {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+.whyimT {
+  width: 250px;
+}
+.whyimT p {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.whyimT h1 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.whyimT #needbg {
+  background-color: #ee8a21;
+  border-radius: 50%;
+
+  padding: 7px;
+}
+/* Why Choose Us End */
+
+/* Categories section Start */
+
+.Categories {
+  height: 170vh;
+  background: linear-gradient(125deg, #f3ae65, #e9dddda9, #eda85e);
+  display: block;
+  overflow: hidden;
+}
+.Categories .all-here {
+  /* width: 100%; */
+  position: relative;
+  z-index: 5;
+}
+.cCat {
+  width: 100%;
+  height: 60vh;
+  margin-right: 5vw;
+  display: grid;
+  grid-template-columns: 320px 320px 320px 250px 320px 300px;
+  grid-template-rows: 220px 220px 220px 175px;
+  gap: 10px;
+}
+.cCat div {
+  border-radius: 40px;
+  border: 7px solid white;
+  transition: 500ms all ease-in-out;
+  overflow: hidden;
+  /* &:hover{
+    transform: scale(1.03);
+  } */
+}
+.cCat div img {
+  transition: transform 700ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.citem1 {
+  grid-column: 2/5; /* grid-column: start-position / end-position ... same for grid-row:2/3*/
+  position: relative;
+}
+.citem1::after {
+  position: absolute;
+  content: "Hyderabadi Biryani";
+  color: white;
+  font-weight: 700;
+  right: 20px;
+  bottom: 20px;
+  font-size: 2em;
+}
+.citem1 img {
+  width: 100%;
+  height: 100%;
+}
+.citem2 {
+  grid-column: 2/5;
+  position: relative;
+}
+.citem2::after {
+  position: absolute;
+  content: "Lucknowi Biryani";
+  color: white;
+  font-weight: 700;
+  left: 20px;
+  bottom: 20px;
+  font-size: 2em;
+}
+.citem2 img {
+  width: 100%;
+  height: 100%;
+}
+.citem3 {
+  grid-column: 2/4;
+  position: relative;
+}
+.citem3::after {
+  position: absolute;
+  content: "Kebabs";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  right: 20px;
+  bottom: 20px;
+  font-size: 2em;
+}
+.citem3 img {
+  width: 100%;
+  height: 100%;
+}
+.citem4 {
+  grid-column: 4/4;
+  grid-row: 3/5;
+  position: relative;
+}
+.citem4::after {
+  position: absolute;
+  content: "Biryani Combo";
+  color: white;
+  font-weight: 700;
+  left: 65px;
+  bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+.citem4 img {
+  width: 100%;
+  height: 100%;
+}
+.citem5 {
+  grid-column: 2/3;
+  position: relative;
+}
+.citem5::after {
+  position: absolute;
+  content: "Beverages";
+  color: white;
+  font-weight: 700;
+  left: 80px;
+  bottom: 20px;
+  letter-spacing: 1px;
+
+  font-size: 2em;
+}
+.citem5 img {
+  width: 100%;
+  height: 100%;
+}
+.citem6 {
+  grid-column: 3/4;
+  position: relative;
+}
+.citem6::after {
+  position: absolute;
+  content: "Desserts";
+  color: white;
+  font-weight: 700;
+  left: 80px;
+  bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+.citem6 img {
+  width: 100%;
+  height: 100%;
+}
+
+.Categories .category-inline {
+  display: flex;
+  /* justify-content: center; */
+  /* margin-left: 6vh; */
+  padding: 4.5em;
+  left: 22vw;
+  position: relative;
+}
+
+.category-inline p {
+  font-size: 5em;
+}
+.category-inline img {
+  height: 7em;
+  margin-top: 18px;
+  margin-right: 3em;
+}
+.categoriesBG {
+  position: relative;
+  /* z-index: -1; */
+  opacity: 0.7;
+}
+.categoriesBG img {
+  z-index: 1;
+  position: absolute;
+}
+.categoriesBG #star1 {
+  width: 600px;
+  position: absolute;
+  right: -10vh;
+  z-index: 2;
+}
+.categoriesBG #star2 {
+  width: 600px;
+  position: absolute;
+  /* bottom: 0; */
+  z-index: 2;
+  top: 102vh;
+  left: -12vh;
+}
+.categoriesBG #star3 {
+  width: 350px;
+  position: absolute;
+  right: -5vh;
+  top: 120vh;
+  /* transform: rotate(48deg); */
+}
+.categoriesBG #leftBottomBowl {
+  position: absolute;
+  left: 0;
+  width: 198w;
+  top: 115vh;
+  z-index: 2;
+}
+.categoriesBG #topRightBowl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* Categories section End */
+
+/* Customer's Review Section Start */
+.Wht-CS {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.Wht-CS #wcsBG {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+.Wht-CS #wcs-center,
+.main-ct {
+  z-index: 1;
+  position: absolute;
+  top: 0.9em;
+  left: 2.7em;
+  font-size: 5em;
+}
+.main-ct {
+  margin-top: 7vh;
+}
+.main-ct .sanji img {
+  width: 6em;
+  position: absolute;
+  top: 7vw;
+  left: 0;
+}
+/* .main-ct .sanji{ */
+/* display: flex; */
+/* justify-content: space-evenly; */
+
+/* } */
+.main-ct {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sanji #sanji-img {
+  z-index: 10;
+}
+.sanji #sanjibg1 {
+  position: absolute;
+  top: 3.33em;
+}
+.sanji #sanjibg2 {
+  position: absolute;
+  top: 4.86em;
+}
+.main-ct .review {
+  margin-top: 43vh;
+  margin-right: 20vw;
+  text-align: left;
+  width: 40vw;
+}
+.main-ct .review .title {
+  font-size: 0.3em;
+  font-weight: 900;
+}
+.main-ct .review .review-comment {
+  font-size: 0.26em;
+  font-weight: 500;
+}
+.review .profile {
+  display: flex;
+}
+.review .name {
+  margin: 0px 20px;
+}
+.review .name::after {
+  content: "Food Enthusiast";
+  display: block;
+  font-size: 0.7em;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  color: #4d4646;
+}
+.review .rating {
+  display: flex;
+  align-items: center;
+}
+.review .num {
+  top: 16px;
+  margin: 11px;
+  position: relative;
+}
+/* .sanji{
+  display: none;
+} */
+/* Customer's Review Section End  */
+
+/* Kebab */
+
+.KababWaiting {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.KababWaiting #kebab-full {
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+.KababWaiting #kebabbg-full {
+  width: 100%;
+}
+.KababWaiting .koby {
+  width: 33vw;
+  color: rgb(255, 255, 255);
+  font-size: 44px;
+  position: absolute;
+  top: -1vh;
+  right: 1vh;
+  font-weight: 800;
+  font-size: 7em;
+  z-index: 10;
+  text-transform: uppercase;
+}
+.koby #textbgw {
+  background: linear-gradient(to right, #fca547, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Kebab */
+
+/* Footer Start */
+
+footer {
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(145deg, #eda85e, white, #eda85e);
+  overflow: hidden;
+}
+footer .social-icons {
+  background-color: #ee8a21;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons i {
+  font-size: 50px;
+  margin: 0 5vw;
+}
+.col ul {
+  display: block;
+  margin-top: 70px;
+}
+.col ul li {
+  margin: 25px;
+}
+.col ul .headfo {
+  /* text-decoration: none; */
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.main-footer .cols4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer-img {
+  margin-top: 50%;
+  width: 150px;
+}
+.main-footer {
+  position: relative;
+}
+.main-footer #footer-img2 {
+  position: absolute;
+  top: 37vh;
+}
+
+.item button {
+  transition: 500ms ease;
+  border: 1px solid #ee8a21;
+  &:hover {
+    /* transition: 500ms ease; */
+    /* font-weight: 800; */
+    color: #ee8a21;
+    background-color: white;
+    border: 1px solid #ee8a21;
+  }
+}
+/* Footer End */
+
+/* Responsive css for width 768-810 */
+@media (min-width: 768px) and (max-width: 810px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+  .container {
+    display: flex;
+    padding: 2px;
+  }
+  .container img {
+    display: none;
+  }
+  .container .brand-name {
+    padding: 0 5px;
+    margin-top: 5px;
+  }
+  .brand-name {
+    font-family: "Manrope";
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-weight: 800;
+    position: relative;
+  }
+  .brand-name::after {
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 1vh;
+    width: 343;
+    padding: 0;
+  }
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+    /* text-shadow: px #544848; */
+  }
+  ul li a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: black;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0.2, 0.4); */
+    font-weight: 400;
+  }
+  #contact-num {
+    background-color: #ee8a21;
+    color: #ffffff;
+    border: none;
+    margin-left: 0;
+    border-radius: 1000px;
+    padding: 8px 20px;
+  }
+
+  /* Hero Section Start */
+  .hero {
+    width: 100%;
+    height: 75vh;
+    background: linear-gradient(145deg, #f3ae65, #ffffffa9, #eda85e);
+    position: relative;
+  }
+  .hero #handi {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    animation: shake 2s ease-in-out infinite;
+    transition: transform 0.5s ease;
+  }
+
+  .hero #handi:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .hero .s-text {
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+  }
+  .s-text .seg {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .s-text p {
+    margin: 0;
+  }
+  .slogan {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+  }
+  .s-text #curly {
+    margin: 15px;
+  }
+  .f-words {
+    font-size: 1.3em;
+  }
+  .s-text button {
+    padding: 15px 30px;
+    /* border: none; */
+    border-radius: 1000px;
+    background-color: #ee8a21;
+    margin: 25px 0px;
+  }
+  .slogan span {
+    background: linear-gradient(to right, #ee8a21, #000000);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .s-text button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .hero #bowl {
+    position: absolute;
+    bottom: 0;
+    /* width: 800px; */
+    height: 19em;
+    object-fit: contain;
+  }
+  .chin2 {
+    display: flex;
+    margin: 25px 0;
+  }
+  .chin2 p {
+    position: relative;
+    left: 100px;
+  }
+  .chin2 button {
+    position: relative;
+    left: 100px;
+    margin: 0 15px;
+    padding: 20px 65px;
+  }
+  #bowl2 {
+    width: 450px;
+    position: relative;
+    top: 9vw;
+  }
+  .hero .s-text2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5vw;
+  }
+  .s-text2 .seg {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 25px 0;
+  }
+  .s-text2 {
+    text-align: center;
+    margin: 10vh 0;
+  }
+  .s-text2 button {
+    padding: 20px 35px;
+    /* border: none; */
+    border-radius: 1000px;
+    background-color: #ee8a21;
+    margin: 30px 0px;
+  }
+  #bowl3 {
+    width: 650px;
+    position: absolute;
+    bottom: 0;
+  }
+  /* Hero Section End*/
+
+
+
+  /* Why Choose Us Start */
+  .need {
+    overflow: hidden;
+    height: 80vh;
+    /* width: 100vw; */
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
+    text-align: center;
+    position: relative;
+    margin-bottom: 4em;
+  }
+  #rdbox {
+    width: 30vw;
+    height: 20vh;
+    z-index: -100;
+  }
+  #rdbox .rdot {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    z-index: -1000;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #f0e6daaf;
+  }
+  .need #bgcircle {
+    position: absolute;
+    left: 45%;
+    top: -44vh;
+    z-index: -100;
+  }
+  #needbg {
+    transition: 500ms ease-in-out;
+    &:hover {
+      animation: spin 3s linear infinite;
+    }
+  }
+  .wcU {
+    position: absolute;
+    font-size: 3.2em;
+    left: 22vh;
+    top: 8vh;
+  }
+  .need #qM {
+    position: absolute;
+    margin-left: 25px;
+    height: 2em;
+  }
+  .answer {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+  }
+  .whyimT {
+    width: 200px;
+  }
+  .whyimT p {
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+  .whyimT h1 {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 900;
+  }
+  .whyimT img{
+    margin-top: 10vh;
+  }
+  .whyimT #needbg {
+    background-color: #ee8a21;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  .answer img{
+    width: 11em;
+  }
+  /* Why Choose Us End */
+
+  /* Categories start */
+  
+  /* Categories end */
+}
