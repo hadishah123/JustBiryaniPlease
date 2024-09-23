@@ -10,7 +10,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.container {
+.header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@ header {
 #desktop {
   height: 4rem;
 }
-.container .brand-name {
+.header-items .brand-name {
   padding: 0 10px;
   margin-top: 10px;
 }
@@ -45,23 +45,19 @@ header {
 }
 ul {
   display: flex;
-  /* justify-content: space-around; */
   list-style: none;
   margin: 0;
-  margin-top: 2vh;
-  width: 643;
+  margin-top: 1vh;
   padding: 0;
 }
 ul li {
   display: flex;
   justify-content: space-between;
-  margin: 0px 60px;
-  text-shadow: px #544848;
+  margin: 0px 3.7rem;
 }
 ul li a {
   text-decoration: none;
   color: black;
-  /* text-shadow: 1px 1px 3px rgba(0, 0, 0.2, 0.4); */
   font-weight: 600;
 }
 #contact-num {
@@ -74,7 +70,7 @@ ul li a {
   margin-top: 0.625rem;
 }
 
-/* Hero Section Start */
+/* Hero Section Start we-rreal*/
 .hero {
   width: 100vw;
   height: calc(100vh - 4rem);
@@ -109,7 +105,7 @@ ul li a {
   position: absolute;
 }
 
-.hero .real {
+.hero .we-rreal {
   position: absolute;
   text-align: center;
   top: 3rem;
@@ -124,12 +120,12 @@ ul li a {
 .s-text .slide2 {
   font-size: 5rem;
 }
-.slogan {
+.slogan-C4E {
   font-size: 5.5rem;
   margin: 0;
   font-weight: 600;
 }
-.s-text #curly {
+.s-text #curly-S1 {
   margin: 1.9rem;
 }
 .f-words {
@@ -143,7 +139,7 @@ ul li a {
   margin: 1rem;
   font-size: 1.1rem;
 }
-.slogan span {
+.slogan-C4E span {
   background: linear-gradient(to right, #ee8a21, #000000);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -165,7 +161,7 @@ ul li a {
   align-items: center;
   text-align: center;
 }
-.center #upon {
+.center #new-upon {
   position: absolute;
   top: 2rem;
   /* text-align: center; */
@@ -212,40 +208,45 @@ ul li a {
   top: 34rem;
   width: 9rem;
 }
-#newB {
+#animate-S1 {
   position: absolute;
   right: -33rem;
   top: -2.5rem;
   animation: shake 2s ease-in-out infinite;
   transition: transform 0.5s ease;
 }
-#justin {
+#styleoS1 {
   position: absolute;
   right: -6rem;
   top: 3rem;
   animation: shake 2s ease-in-out infinite;
   transition: transform 0.5s ease;
 }
-#kuro {
+#d-arrow {
   position: absolute;
   left: 12rem;
   top: 16rem;
 }
-#kuro2 {
+#d-arrow2 {
   position: absolute;
   right: 27rem;
   top: 18rem;
   height: 110px;
 }
-#giveJ {
+#give-J {
   position: absolute;
   left: 13rem;
 }
-#giveJ2 {
+#p-give-J2{
   position: relative;
-  left: 45rem;
-  bottom: 0;
+  top: 0;
+  left: 47rem;
 }
+/* #give-J2 {
+  position: absolute;
+  left: 13rem;
+  bottom: 0;
+} */
 .hero .s-text2 {
   position: absolute;
   right: 0;
@@ -275,15 +276,15 @@ ul li a {
 .s-text2 p {
   margin: 0;
 }
-#bowl3 {
-  width: 750px;
+#bowl3-S4 {
+  width: 47rem;
   position: absolute;
   bottom: 0;
 }
 /* Hero Section End*/
 
 /* Why Choose Us Start */
-.need {
+.need-wcu {
   overflow: hidden;
   height: 94vh;
   /* width: 100vw; */
@@ -309,7 +310,7 @@ ul li a {
   flex-wrap: wrap;
   background-color: #f0e6daaf;
 }
-.need #bgcircle {
+.need-wcu #bgcircle {
   position: absolute;
   left: 35%;
   top: -54vh;
@@ -327,7 +328,7 @@ ul li a {
   left: 22rem;
   top: 5rem;
 }
-.need #qM {
+.need-wcu #Q-mark-sec2 {
   position: absolute;
   margin-left: 2.2rem;
 }
@@ -749,8 +750,8 @@ footer .social-icons {
     border: 1px solid #ee8a21;
   }
 }
-.txt_line{
-  text-decoration: underline
+.txt_line {
+  text-decoration: underline;
 }
 /* Footer End */
 
@@ -763,14 +764,14 @@ footer .social-icons {
     align-items: center;
     height: 10vh;
   }
-  .container {
+  .header-items {
     display: flex;
     padding: 2px;
   }
-  .container img {
+  .header-items img {
     display: none;
   }
-  .container .brand-name {
+  .header-items .brand-name {
     padding: 0 5px;
     margin-top: 5px;
   }
@@ -858,7 +859,7 @@ footer .social-icons {
   .s-text p {
     margin: 0;
   }
-  .slogan {
+  .slogan-C4E {
     font-size: 3em;
     margin: 0;
     font-weight: 600;
@@ -876,7 +877,7 @@ footer .social-icons {
     background-color: #ee8a21;
     margin: 25px 0px;
   }
-  .slogan span {
+  .slogan-C4E span {
     background: linear-gradient(to right, #ee8a21, #000000);
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -942,7 +943,7 @@ footer .social-icons {
   /* Hero Section End*/
 
   /* Why Choose Us Start */
-  .need {
+  .need-wcu {
     overflow: hidden;
     height: 80vh;
     /* width: 100vw; */
@@ -968,7 +969,7 @@ footer .social-icons {
     flex-wrap: wrap;
     background-color: #f0e6daaf;
   }
-  .need #bgcircle {
+  .need-wcu #bgcircle {
     position: absolute;
     left: 45%;
     top: -44vh;
@@ -986,7 +987,7 @@ footer .social-icons {
     left: 22vh;
     top: 8vh;
   }
-  .need #qM {
+  .need-wcu #Q-mark-sec2 {
     position: absolute;
     margin-left: 25px;
     height: 2em;
