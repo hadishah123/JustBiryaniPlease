@@ -18,26 +18,26 @@
   justify-content: center;
 }
 #bestyTitle {
-  font-size: 4em;
-  margin: 1em;
+  font-size: 3em;
+  margin: 0.6em;
 }
 #betleon {
-  width: 100px;
+  width: 4rem;
   z-index: 1000;
   position: absolute;
-  right: 27vw;
-  top: 4vh;
+  right: 33vw;
+  /* top: 1rem; */
 }
 .bbitem-container {
   display: flex;
   justify-content: space-evenly;
 }
 .item {
-  width: 350px;
+  width: 21.875rem;
   height: max-content;
-  padding: 15px;
+  padding: 1rem;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   text-align: center;
   position: relative;
   transition: 0.5s all ease-in;
@@ -53,14 +53,6 @@
     position: absolute;
     left: 0;
     top: -7em;
-}
-@keyframes spin {
-  0%{
-    transform: rotate(0deg);
-  }  
-  100%{
-    transform: rotate(360deg);
-  }  
 }
 .item .order-now{
     padding: 15px 35px;
@@ -92,7 +84,7 @@
     display: flex;
 }
 .item .shark3 img{
-    margin-left: 11px;    
+    margin-left: 0.6875rem;    
 }
 .item .shark3 span{
     margin: 6px;    
@@ -115,8 +107,8 @@
 .bbitem-container .items-in-Row{
     display: flex;
     justify-content: space-evenly;
-    margin: 20vh 0;
+    margin: 9rem 0;
 }
 #bbspace-top{
-    margin-top: 10vh;
+    margin-top: 3vh;
 }
