@@ -85,9 +85,9 @@ header {
   font-size: 0.75rem;
   color: #898080;
   position: absolute;
-  left: 17.7rem;
+  left: 10rem;
   width: max-content;
-  margin-top: 2.625rem;
+  margin-top: 2rem;
   letter-spacing: 2px;
   font-weight: 700;
   transform: translateX(-50%);
@@ -109,7 +109,7 @@ ul li a {
   color: #fff;
   font-size: 1rem;
   border-radius: 1000px;
-  padding: 0.625rem;
+  padding: .5rem 1.25rem;
   margin-top: 0.625rem;
 }
 .hero {
