@@ -53,3 +53,37 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval(slideIntervalId);
   });
 });
+
+// Review Carousel
+let currentReviewSlide = 0;
+const reviewSlides = document.querySelectorAll(".review-slide");
+let slideInterval;
+
+function showSlide(index) {
+  reviewSlides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+}
+
+function nextSlide() {
+  currentReviewSlide = (currentReviewSlide + 1) % reviewSlides.length;
+  showSlide(currentReviewSlide);
+}
+
+function startSlideshow() {
+  slideInterval = setInterval(nextSlide, 3000);
+}
+
+function stopSlideshow() {
+  clearInterval(slideInterval);
+}
+
+showSlide(currentReviewSlide);
+startSlideshow();
+
+const slideshowContainer = document.querySelector(".review-carousel");
+
+slideshowContainer.addEventListener("mouseenter", stopSlideshow);
+slideshowContainer.addEventListener("mouseleave", startSlideshow);
+
+// Review Carousel

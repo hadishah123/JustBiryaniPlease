@@ -32,7 +32,7 @@
   justify-content: space-evenly;
 }
 .item {
-  width: 21.875rem;
+  width: 19rem;
   height: max-content;
   padding: 1rem;
   background-color: #fff;
@@ -57,7 +57,7 @@
   }
 }
 .item .biryani-img {
-  width: 25em;
+  width: 22em;
   position: absolute;
   left: 0;
   top: -7em;
@@ -71,7 +71,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.5px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   color: #fff;
 }
 .item .item-name {
@@ -87,7 +87,7 @@
 .item .shark2 {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0 1rem;
 }
 .item .shark3 {
   display: flex;
@@ -99,10 +99,10 @@
   margin: 6px;
 }
 #givespace {
-  margin-top: 10em;
+  margin-top: 12rem;
 }
 #givespace2 {
-  margin-top: 9em;
+  margin-top: 11rem;
 }
 .item .ratingOR {
   color: #a96318;

@@ -1,3 +1,36 @@
+.chin2 {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  align-items: center;
+}
+.hero-section-sub-heading-text {
+  font-size: 2rem;
+}
+.hero-section-sub-heading-right {
+  text-align: left;
+  /* border: 1px solid black; */
+}
+.see-the-menu-button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  /* border: 1px solid black; */
+}
+.hero-section-slide4-text-right {
+  height: 30vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .brand-name,
 body {
   font-family: Manrope;
@@ -13,8 +46,7 @@ ul {
 }
 #bowl2,
 .brand-name,
-.chin2 button,
-.chin2 p,
+/* .chin2 button, */
 .hero {
   position: relative;
 }
@@ -27,7 +59,8 @@ ul {
 #bowl3-S4,
 .hero #bowl {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
+  left: 22rem;
 }
 .center,
 .hero .we-rreal,
@@ -109,7 +142,7 @@ ul li a {
   color: #fff;
   font-size: 1rem;
   border-radius: 1000px;
-  padding: .5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   margin-top: 0.625rem;
 }
 .hero {
@@ -150,9 +183,9 @@ ul li a {
 .s-text2 p {
   margin: 0;
 }
-.chin2 button,
+/* .chin2 button, */
 .s-text button {
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 1rem 2.5rem;
 }
 .s-text .slide2 {
@@ -169,22 +202,19 @@ ul li a {
 .f-words {
   font-size: 2em;
 }
-.s-text button {
-  border-radius: 1000px;
-  font-size: 1.1rem;
-}
 .slogan-C4E span {
   background: linear-gradient(to right, #ee8a21, #000);
   background-clip: text;
 }
-.s-text button a,
+/* .s-text button a,
 .s-text2 button a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-}
+} */
 .hero #bowl {
   width: 44rem;
+  bottom: 0;
   object-fit: contain;
 }
 .center {
@@ -201,12 +231,13 @@ ul li a {
   left: 3rem;
 }
 .chin2 p {
-  left: -1rem;
+  /* left: -1rem; */
+  text-align: left;
 }
-.chin2 button {
+/* .chin2 button {
   right: 2rem;
   font-size: 1rem;
-}
+} */
 #bowl2 {
   width: 40rem;
   top: 3.5rem;
@@ -244,8 +275,8 @@ ul li a {
 }
 #d-arrow {
   position: absolute;
-  left: 12rem;
-  top: 16rem;
+  left: 15rem;
+  top: 9rem;
 }
 #d-arrow2 {
   position: absolute;
@@ -281,15 +312,18 @@ ul li a {
 .s-text2 {
   margin-top: 10vh;
 }
-.s-text2 button {
+/* .s-text2 button {
   padding: 20px 35px;
   border: none;
   border-radius: 1000px;
   background-color: #ee8a21;
   margin: 30px 0;
-}
+} */
 #bowl3-S4 {
-  width: 47rem;
+  width: 37rem;
+  bottom:-1.7rem;
+  left: 28vw;
+  position: absolute;
 }
 .need-wcu {
   height: 94vh;
@@ -457,7 +491,7 @@ ul li a {
 }
 .Categories .category-inline {
   display: flex;
-  padding: 4.5em;
+  padding: 3rem;
   left: 22vw;
   position: relative;
 }
@@ -551,40 +585,57 @@ ul li a {
   position: relative;
 }
 .sanji #sanji-img {
+  width: 26rem;
   z-index: 10;
 }
-.sanji #sanjibg1 {
-  position: absolute;
-  top: 3.33em;
-}
-.sanji #sanjibg2 {
-  position: absolute;
-  top: 4.86em;
-}
-.main-ct .review {
+
+.review-carousel {
+  position: relative;
+  overflow: hidden;
+  /* margin: auto; */
   margin-top: 10rem;
   margin-right: 33rem;
   margin-left: 15rem;
+  width: 38vw;
+  height: max-content;
+  /* border: 1px solid black; */
   text-align: left;
-  width: 35vw;
 }
-.main-ct .review .title {
+.main-ct .review-carousel .review-slide {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+@keyframes reviewSlide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.review-carousel .review-slide.active {
+  display: block;
+  animation: reviewSlide 500ms ease-in;
+}
+.main-ct .review-slide .title {
   font-size: 0.5em;
   font-weight: 900;
 }
-.main-ct .review .review-comment {
+.main-ct .review-slide .review-comment {
   font-size: 0.35em;
   font-weight: 500;
 }
-.review .profile,
-.review .rating {
+.review-slide .profile,
+.review-slide .rating {
   display: flex;
   align-items: center;
 }
-.review .name {
+.review-slide .name {
   margin: 0 1.3rem;
 }
-.review .name::after {
+.review-slide .name::after {
   content: "Food Enthusiast";
   display: block;
   font-size: 0.7em;
@@ -592,7 +643,8 @@ ul li a {
   letter-spacing: 0.5px;
   color: #4d4646;
 }
-.review .num {
+.review-slide .num {
+  position: relative;
   top: 0.5rem;
   margin: 1rem;
 }
@@ -612,10 +664,10 @@ ul li a {
   width: 33vw;
   color: #fff;
   position: absolute;
-  top: -5rem;
-  right: 2rem;
+  top: -2rem;
+  right: -7rem;
   font-weight: 800;
-  font-size: 6rem;
+  font-size: 5rem;
   z-index: 10;
   text-transform: uppercase;
 }
