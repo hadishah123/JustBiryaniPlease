@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just Biryani please</title>
 
+    <link
+      rel="shortcut icon"
+      href="assets\logo\logo.webp"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link
       rel="stylesheet"
@@ -30,13 +35,13 @@
   <body>
     <header id="desktop">
       <div class="header-items">
-        <img height="40" width="40" src="assets/logo/footer-logo.webp" alt="logo" />
+        <img height="40" width="40" src="assets/logo/logo.webp" alt="logo" />
         <p class="brand-name" style="font-size: 24px">Just Biryani Please</p>
       </div>
       <div class="navbar-list">
         <ul>
           <li><a href="#desktop">CATERING</a></li>
-          <li><a href="#MENU">MENU</a></li>
+          <li><a href="#Menu">MENU</a></li>
           <li><a href="#desktop">OUTLETS</a></li>
         </ul>
       </div>
@@ -78,8 +83,9 @@
                 outline: none;
                 height: fit-content;
               "
-            >
+            ><a href="#MENU">
               SEE THE MENU
+            </a>
             </button>
           </div>
         </section>
@@ -114,8 +120,8 @@
                   outline: none;
                   height: fit-content;
                 "
-              >
-                SEE THE MENU
+            ><a href="#MENU">
+                SEE THE MENU</a>
               </button>
             </div>
           </div>
@@ -147,14 +153,18 @@
                 margin-top: 2rem;
                 height: fit-content;
               "
-            >
-              SEE THE MENU
+            ><a href="#MENU">
+              SEE THE MENU</a>
             </button>
           </div>
         </section>
 
         <section class="hero center">
-          <img src="assets/hero/chicken-bowl.webp" alt="biryani bowl" id="bowl3-S4" />
+          <img
+            src="assets/hero/chicken-bowl.webp"
+            alt="biryani bowl"
+            id="bowl3-S4"
+          />
           <div class="s-text we-rreal" id="new-upon">
             <p class="seg">Feel in Every Grain</p>
             <p class="slogan-C4E">
@@ -181,8 +191,8 @@
                   margin-right: 13rem;
                   height: fit-content;
                 "
-              >
-                SEE THE MENU
+            ><a href="#MENU">
+                SEE THE MENU</a>
               </button>
             </div>
           </div>
@@ -225,12 +235,12 @@
         <span class="rdot"></span>
       </div>
       <img src="assets/WCU/bgcircle.webp" alt="circle" id="bgcircle" />
-      <p class="slogan-C4E wcU">
+      <p class="slogan-C4E wcU animateToBottm">
         Why <span>Choose</span> Us
         <img src="assets/WCU/wcu2.webp" alt="? img" id="Q-mark-sec2" />
       </p>
       <div class="answer">
-        <div class="whyimT">
+        <div class="whyimT animateToRight">
           <img src="assets/WCU/HDo.webp" alt="food" id="needbg" />
           <h1>Hot Deals & offers</h1>
           <p>
@@ -238,7 +248,7 @@
             biryani dishes.
           </p>
         </div>
-        <div class="whyimT">
+        <div class="whyimT animateToTop">
           <img src="assets/WCU/Dboy.webp" alt="delivery" />
           <h1>Fastest Delivery</h1>
           <p>
@@ -246,7 +256,7 @@
             and ready to enjoy.
           </p>
         </div>
-        <div class="whyimT">
+        <div class="whyimT animateToLeft">
           <img src="assets/WCU/SPu.webp" alt="package" />
           <h1>Self Pick up</h1>
           <p>
@@ -274,43 +284,43 @@
         />
       </div>
       <div class="all-here">
-        <div class="category-inline">
+        <div class="category-inline animateToBottm">
           <img src="assets/categories/bg's/curlywa.webp" alt="design" />
           <p class="slogan-C4E"><span>Categories</span></p>
         </div>
         <div class="cCat">
-          <div class="citem1">
+          <div class="citem1 animateToLeft">
             <img
               src="assets/categories/cc/Hyderabadi Biyani.webp"
               alt="hyderbadi-biryani"
             />
           </div>
-          <div class="citem2">
+          <div class="citem2 animateToRight">
             <img
               src="assets/categories/cc/Lucknowi Biryani.webp"
               alt="lucknowi-biryani"
             />
           </div>
-          <div class="citem3">
+          <div class="citem3 animateToTop">
             <img src="assets/categories/cc/kebabs.webp" alt="Kebabs" />
           </div>
-          <div class="citem4">
+          <div class="citem4 animateToLeft">
             <img
               src="assets/categories/cc/Combo Biryani.webp"
               alt="Biryani Combo"
             />
           </div>
-          <div class="citem5">
+          <div class="citem5 animateToRight">
             <img src="assets/categories/cc/beverages.webp" alt="Beverages" />
           </div>
-          <div class="citem6">
+          <div class="citem6 animateToLeft">
             <img src="assets/categories/cc/desserts.webp" alt="Desserts" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bestseller" id="MENU">
+    <section class="bestseller" id="Menu">
       <img
         src="assets/bestseller/bestsellerBG.webp"
         alt="bgstyle"
@@ -318,18 +328,19 @@
       />
 
       <div class="besty-SBB">
-        <p class="slogan-C4E" id="bestyTitle">
+        <p class="slogan-C4E animateToBottm" id="bestyTitle">
           <span>Bestseller Biryani</span>
         </p>
         <img
           src="assets/bestseller/styleon.webp"
           alt="Bestseller Biryani"
           id="betleon-SBB"
+          class="animateToBottm"
         />
       </div>
 
       <div class="bbitem-container">
-        <div class="items-in-Row" id="bbspace-top">
+        <div class="items-in-Row animateToRight" id="bbspace-top">
           <div class="item">
             <img
               src="assets/bestseller/bitem5.webp"
@@ -390,7 +401,7 @@
           </div>
         </div>
 
-        <div class="items-in-Row">
+        <div class="items-in-Row animateToRight">
           <div class="item">
             <img
               src="assets/bestseller/bitem3.webp"
@@ -450,7 +461,7 @@
           </div>
         </div>
 
-        <div class="items-in-Row">
+        <div class="items-in-Row animateToRight">
           <div class="item">
             <img
               src="assets/bestseller/bitem1.webp"
@@ -514,14 +525,16 @@
 
     <section class="Wht-CS">
       <img src="assets/WPS/justBG.webp" alt="bg" id="wcsBG" />
-      <p class="slogan-C4E" id="wcs-center">What <span>Customers</span> Say</p>
+      <p class="slogan-C4E animateToBottm" id="wcs-center">
+        What <span>Customers</span> Say
+      </p>
 
-      <div class="main-ct">
+      <div class="main-ct animateToRight">
         <div class="sanji">
           <img src="assets/WPS/cook-Sanji.webp" alt="sanji" id="sanji-img" />
         </div>
 
-        <div class="review-carousel">
+        <div class="review-carousel animateToLeft">
           <div class="review-slide active">
             <p class="title">WHAT THEY SAY</p>
             <p class="review-comment">
@@ -638,40 +651,57 @@
     <section class="KababWaiting">
       <img src="assets/Kebab/kebab-full.jpg" alt="kebab img" id="kebab-full" />
       <img src="assets/Kebab/kebabbg-ful.webp" alt="" id="kebabbg-full" />
-      <p class="koby">Your Perfect <span id="textbgw">Kebab</span> Awaits</p>
+      <p class="koby animateToLeft">
+        Your Perfect <span id="textbgw">Kebab</span> Awaits
+      </p>
     </section>
 
     <footer>
       <div class="social-icons">
         <a
           href="https://wa.me/8055566602?text=Hello!%20I%20have%20a%20query%20about%20your%20services"
-          class="whatsapp-icon"
+          class="whatsapp-icon animateToRight"
           target="_blank"
         >
-          <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-whatsapp animateToRight"
+            style="color: #ffffff"
+          ></i>
         </a>
         <a href="#">
-          <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-facebook animateToRight"
+            style="color: #ffffff"
+          ></i>
         </a>
 
         <a href="https://x.com/justbiryanipls" target="_blank">
-          <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-twitter animateToRight"
+            style="color: #ffffff"
+          ></i>
         </a>
 
         <a href="https://www.instagram.com/justbiryaniplease" target="_blank">
-          <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-instagram animateToRight"
+            style="color: #ffffff"
+          ></i>
         </a>
         <a href="#">
-          <i class="fa-brands fa-linkedin" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-linkedin animateToRight"
+            style="color: #ffffff"
+          ></i>
         </a>
       </div>
 
       <div class="main-footer">
         <div class="cols4">
           <div>
-            <img src="assets\logo\footer-logo.webp" alt="logo" id="footer-img" />
+            <img src="assets\logo\logo.webp" alt="logo" id="footer-img" />
           </div>
-          <div class="col">
+          <div class="col animateToTop">
             <ul>
               <li class="headfo">Menu</li>
               <li><a href="#">Kitchen</a></li>
@@ -680,7 +710,7 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col animateToTop">
             <ul>
               <li class="headfo">Meet Chefs</li>
               <li><a href="#">Amir Hosseini</a></li>
@@ -688,7 +718,7 @@
               <li><a href="#">Bahram Akrami</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col animateToTop">
             <ul>
               <li class="headfo">Order Now</li>
               <li>
@@ -717,7 +747,7 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col animateToTop">
             <ul>
               <li class="headfo">Contact Us</li>
               <li>

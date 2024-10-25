@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Review Carousel
+// Review Carousel start
 let currentReviewSlide = 0;
 const reviewSlides = document.querySelectorAll(".review-slide");
 let slideInterval;
@@ -86,4 +86,62 @@ const slideshowContainer = document.querySelector(".review-carousel");
 slideshowContainer.addEventListener("mouseenter", stopSlideshow);
 slideshowContainer.addEventListener("mouseleave", startSlideshow);
 
-// Review Carousel
+// Review Carousel end
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top < window.innerHeight &&
+    rect.bottom >= 0 &&
+    rect.left < window.innerWidth &&
+    rect.right >= 0
+  );
+}
+
+function handleScroll() {
+  const elements = document.querySelectorAll(".animateToRight");
+  elements.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
+    }
+  });
+}
+function handleScroll2() {
+  const elements = document.querySelectorAll(".animateToBottm");
+  elements.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
+    }
+  });
+}
+function handleScroll4() {
+  const elements = document.querySelectorAll(".animateToTop");
+  elements.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
+    }
+  });
+}
+function handleScroll3() {
+  const elements = document.querySelectorAll(".animateToLeft");
+  elements.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add("visible");
+    } else {
+      el.classList.remove("visible");
+    }
+  });
+}
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("scroll", handleScroll2);
+window.addEventListener("scroll", handleScroll3);
+window.addEventListener("scroll", handleScroll4);
+document.addEventListener("DOMContentLoaded", handleScroll);
+
+console.log('%cMade with ❤️ by DesignFrnd!', 'color: white; font-size: 20px; font-weight: bold; border:2px solid white; padding:1rem; border-radius:0 25px;');

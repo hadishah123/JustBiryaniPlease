@@ -29,7 +29,7 @@
   align-items: flex-end;
   flex-direction: column;
   justify-content: space-around;
-}
+} 
 
 .brand-name,
 body {
@@ -321,7 +321,7 @@ ul li a {
 } */
 #bowl3-S4 {
   width: 37rem;
-  bottom:-1.7rem;
+  bottom: -1.7rem;
   left: 28vw;
   position: absolute;
 }
@@ -421,15 +421,16 @@ ul li a {
   border-radius: 2rem;
   overflow: hidden;
   border: 3px solid #fff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  &:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* &:hover {
     border: 4px solid #fff;
-  }
+  } */
 }
 .cCat div img {
   transition: transform 700ms ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 .citem1,
@@ -448,6 +449,7 @@ ul li a {
 .citem6 img {
   width: 100%;
   height: 100%;
+  transform: scale(1.09);
 }
 .citem2::after {
   content: "Lucknowi Biryani";
@@ -721,4 +723,90 @@ footer .social-icons {
 }
 .txt_line {
   text-decoration: underline;
+}
+/* styles.css */
+.animateToRight {
+  /* border: 2px solid black; */
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+.animateToRight.visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+.animateToLeft {
+  /* border: 2px solid black; */
+  opacity: 0;
+  transform: translateX(200px);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+.animateToLeft.visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+.animateToBottm {
+  /* border: 2px solid black; */
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: opacity 0.8s ease, transform .3s ease;
+}
+.animateToBottm.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}
+.animateToTop {
+  /* border: 2px solid black; */
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 0.8s ease, transform .7s ease;
+}
+.animateToTop.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.navbar-list{
+  /* border: 2px solid black; */
+  animation: load 500ms ease;
+  transition: .5s ease;
+}
+@keyframes load {
+  from{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#contact-num{
+  /* border: 2px solid black; */
+  animation: loadR 500ms ease;
+  transition: .5s ease;
+}
+@keyframes loadR {
+  from{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.header-items{
+  animation: loadL 500ms ease;
+  transition: .5s ease;
+}
+@keyframes loadL {
+  from{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to{
+    opacity: 1;
+    transform: translatX(0px);
+  }
 }

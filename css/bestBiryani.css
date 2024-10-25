@@ -120,3 +120,14 @@
 #bbspace-top {
   margin-top: 3vh;
 }
+
+.items-in-Row{
+    /* border: 2px solid black; */
+    opacity: 0; 
+    transform: translateX(-200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.items-in-Row.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to original position */
+}
