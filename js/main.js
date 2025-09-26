@@ -145,3 +145,21 @@ window.addEventListener("scroll", handleScroll4);
 document.addEventListener("DOMContentLoaded", handleScroll);
 
 console.log('%cMade with ❤️ by DesignFrnd!', 'color: white; font-size: 20px; font-weight: bold; border:2px solid white; padding:1rem; border-radius:0 25px;');
+
+function checkMobileScreen() {
+  let body = document.body;
+  if (window.innerWidth <= 1000) {
+    body.innerHTML = "<h1>Please use a larger screen to view this website.</h1>";
+    body.style.textAlign = "center";
+    body.style.padding = "20px";
+    body.style.fontSize = "1.5rem";
+  } else {
+    body.style.textAlign = "";
+    body.style.padding = "";
+    body.style.fontSize = "";
+  }
+}
+
+window.addEventListener('load', checkMobileScreen);
+
+window.addEventListener('resize', checkMobileScreen);
